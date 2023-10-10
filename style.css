@@ -1,72 +1,121 @@
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font: inherit;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-html,
 body {
-    height: 100%;
+  background-image: url(images/new.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+.header {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 100px;
+  z-index: 100;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+.Logo {
+  margin-top: 5px;
+  border: 3px solid white;
+  border-radius: 2px;
+  scale: 0.7;
+  transition: .3s;
 }
 
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
+.Logo:hover {
+  transition: .3s;
+  scale: 0.8;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
+
+.nav-menu {
+  margin-top: 40px;
+  margin-right: 50px;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+.nav-menu a {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  margin-left: 50px;
+  font-size: 1.4rem;
+  font-weight: 550;
+  color: white;
+  text-decoration: none;
 }
+
+.nav-menu a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-menu a:hover::before {
+  transition: .3s;
+  width: 100%;
+}
+
+.container {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.quotation {
+  margin-top: 10px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.gallery-description  {
+  font-size: 1.6rem;
+  color: white;
+  flex-basis: 800px;
+}
+
+.gallery-description p {
+  margin-top: 750px;
+}
+
+.btn {
+  padding: 10px 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  border: 2px solid pink;
+  background-color: rgba(0,0,0,.3);
+  transition: .2s;
+}
+
+.btn:hover {
+  scale: 1.05;
+}
+
+.countdown-timer {
+  display: flex;
+  margin: 10px;
+  border: 2px solid black;
+  /* flex-basis: 100px; */
+}
+
+
+
+
