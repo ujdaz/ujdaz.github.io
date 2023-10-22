@@ -37,11 +37,11 @@ body {
 /* primary header */
 
 .Logo {
-  /* margin: 2rem; */
   scale: 0.7;
 }
 
 .primary-header {
+  /* border: 2px solid black; */
   align-items: center;
   justify-content: space-between;
   margin: 0 60px;
@@ -79,12 +79,9 @@ body {
   align-items: center;
   gap: 10px;
   text-align: center;
-  /* border: 2px solid red; */
-  /* justify-content: space-between; */
 }
 
 .container div {
-  /* border: 2px solid black; */
   margin: 20px;
 }
 
@@ -118,11 +115,35 @@ body {
 @media (max-width: 35em) {
 
   .Logo {
-    margin: 0 -60px;
     scale: 0.5;
   }
 
+  .quotation {
+    font-size: 0.82rem;
+  }
+
+  .gallery-description p {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .galleryBtn a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px 40px;
+    border: 1px solid pink;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .primary-header {
+    margin: 0 0;
+  }
+
   .primary-navigation {
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
     --gap: 2em;
 
     position: fixed;
@@ -151,13 +172,6 @@ body {
     aspect-ratio: 1;
     top: 2rem;
     right: 2rem;
-  }
-
-  @supports (backdrop-filter: blur(1rem)) {
-    .primary-navigation {
-      background: hsl(0 0% 100% / 0.1);
-      backdrop-filter: blur(1rem);
-    }
   }
 
 }
