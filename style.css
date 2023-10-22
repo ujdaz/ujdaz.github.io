@@ -150,7 +150,7 @@ ul a:hover::before {
 
 
 
-@media only screen and (max-width:1000px) {
+/* @media only screen and (max-width:1000px) {
   .burger {
     display: block;
     transition: .3s ease-in-out;
@@ -165,7 +165,7 @@ ul a:hover::before {
   }
 
   .burger.active .line:nth-child(3) {
-    transform: rotate(-315deg) translateY(-8px);
+    transform: rotate(-315deg) translateY(-7px);
   }
 
   ul {
@@ -205,7 +205,7 @@ ul a:hover::before {
     width: 100%;
   }
 
-}
+} */
 
 
 /* @media (max-width: 2000px) and (max-height: 935px) {
