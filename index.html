@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="header">
+    <nav>
         <a href="./" class="Logo"><img src="images/logo.png" alt="logo"></a>
 
-        <nav class="nav-menu">
-            <a href="#">Główna</a>
-            <a href="#">Dojazd</a>
-            <a href="#">Drinki</a>
-            <a href="#">Menu weselne</a>
-        </nav>
+        <ul>
+            <li><a href="#">Główna</a></li>
+            <li><a href="#">Dojazd</a></li>
+            <li><a href="#">Drinki</a></li>
+            <li><a href="#">Menu weselne</a></li>
+        </ul>
 
-     </header>
-
+        <button class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+    </nav>
+      
     <div class="container">
             <div class="quotation">
                 <p><i>„Oto jest miłość: dwoje ludzi spotyka się przypadkiem, 
@@ -39,11 +47,20 @@
                 <p>00</p>
                 <span>Minut</span>
             </div>
-
     </div>
 
 
+<script>
 
+    const mobileNav = document.querySelector('ul');
+    const burgerIcon = document.querySelector('.burger');
+
+    burgerIcon.addEventListener('click', function(){
+        mobileNav.classList.toggle('active');
+        burgerIcon.classList.toggle('active');
+    })
+
+</script>
 
 </body>
 </html>
