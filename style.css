@@ -102,6 +102,15 @@ body {
   font-weight: 500;
 }
 
+.galleryBtn {
+  transition: .2s ease-in-out;
+}
+
+.galleryBtn:hover {
+  transition: .2s ease-in-out;
+  scale: 1.05;
+}
+
 .galleryBtn a {
   text-decoration: none;
   color: white;
@@ -142,8 +151,7 @@ body {
   }
 
   .primary-navigation {
-    background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(1rem);
+    background: rgba(233, 189, 189, 0.95);
     --gap: 2em;
 
     position: fixed;
@@ -163,15 +171,57 @@ body {
   }
 
   .mobile-nav-toggle {
+    background: transparent;
     display: block;
     position: absolute;
     z-index: 9999;
-    background: red;
-    border: 0;
+    border: 1px solid white;
+    border-radius: 1px;
     width: 2rem;
     aspect-ratio: 1;
     top: 2rem;
     right: 2rem;
+  }
+  
+  .hamburger {
+    fill: white;
+    padding: 2px;
+  }
+
+  /* .mobile-nav-toggle .line {
+    transition: 
+    y 300ms ease-in 300ms,
+    rotate 300ms ease-in,
+    opacity 0ms 300ms;
+  }
+
+  .mobile-nav-toggle:hover .line {
+    transition: 
+    y 300ms ease-in,
+    rotate 300ms ease-in 300ms,
+    opacity 0ms 300ms;
+    transform-origin: center;
+  } */
+
+  .mobile-nav-toggle .line {
+    transition: .7s;
+    transform-origin: center;
+  }
+
+  .mobile-nav-toggle:hover :is(.top, .bot) {
+    y: 45px;
+  }
+
+  .mobile-nav-toggle:hover .top {
+    transform: rotate(45deg);
+  }
+
+  .mobile-nav-toggle:hover .mid {
+    opacity: 0;
+  }
+
+  .mobile-nav-toggle:hover .bot {
+    transform: rotate(-45deg);
   }
 
 }
