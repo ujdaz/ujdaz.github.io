@@ -83,7 +83,7 @@ body {
 
 .container div {
   margin: 20px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .quotation {
@@ -92,7 +92,6 @@ body {
 
 .gallery-description {
   flex-basis: 950px;
-  align-items: flex-end;
   display: flex;
   align-items: flex-end;
 }
@@ -133,7 +132,7 @@ body {
 
   .quotation {
     font-size: 0.82rem;
-    flex-basis: 600px;
+    flex-basis: 500px;
     display: flex;
     align-items: flex-end;
   }
@@ -187,6 +186,10 @@ body {
     top: 2rem;
     right: 2rem;
   }
+
+  .mobile-nav-toggle:hover {
+    cursor: pointer;
+  }
   
   .hamburger {
     fill: white;
@@ -194,21 +197,6 @@ body {
     border-radius: 3px;
     padding: 3px;
   }
-
-  /* .mobile-nav-toggle .line {
-    transition: 
-    y 300ms ease-in 300ms,
-    rotate 300ms ease-in,
-    opacity 0ms 300ms;
-  }
-
-  .mobile-nav-toggle:hover .line {
-    transition: 
-    y 300ms ease-in,
-    rotate 300ms ease-in 300ms,
-    opacity 0ms 300ms;
-    transform-origin: center;
-  } */
 
   .mobile-nav-toggle .line {
     transition: .7s;
