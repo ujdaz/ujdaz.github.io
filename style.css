@@ -175,9 +175,7 @@ body {
     display: block;
     position: absolute;
     z-index: 9999;
-    border: 1px solid white;
-    border-radius: 1px;
-    width: 2rem;
+    border: none;
     aspect-ratio: 1;
     top: 2rem;
     right: 2rem;
@@ -185,7 +183,9 @@ body {
   
   .hamburger {
     fill: white;
-    padding: 2px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 3px;
   }
 
   /* .mobile-nav-toggle .line {
@@ -208,19 +208,19 @@ body {
     transform-origin: center;
   }
 
-  .mobile-nav-toggle:hover :is(.top, .bot) {
+  .mobile-nav-toggle[aria-expanded="true"] :is(.top, .bot) {
     y: 45px;
   }
 
-  .mobile-nav-toggle:hover .top {
+  .mobile-nav-toggle[aria-expanded="true"] .top {
     transform: rotate(45deg);
   }
 
-  .mobile-nav-toggle:hover .mid {
+  .mobile-nav-toggle[aria-expanded="true"] .mid {
     opacity: 0;
   }
 
-  .mobile-nav-toggle:hover .bot {
+  .mobile-nav-toggle[aria-expanded="true"] .bot {
     transform: rotate(-45deg);
   }
 
