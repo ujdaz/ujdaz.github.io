@@ -182,6 +182,7 @@ ul a:hover::before {
     justify-content: center;
     gap: 100px;
   }
+}
   /*
 
   ul.active {
@@ -245,7 +246,3 @@ ul a:hover::before {
     /* display: block; */
   /* }
 } */ 
-
-
-
-
