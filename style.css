@@ -38,13 +38,14 @@ body {
 
 .Logo {
   scale: 0.7;
+  margin: 0 20px;
 }
 
 .primary-header {
   /* border: 2px solid black; */
   align-items: center;
   justify-content: space-between;
-  margin: 0 60px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .mobile-nav-toggle {
@@ -60,7 +61,7 @@ body {
 }
 
 .primary-navigation a {
-  margin: 0 0px;
+  margin: 0 30px;
   text-decoration: none;
   color: white;
 }
@@ -88,6 +89,7 @@ body {
 
 .quotation {
   color: white;
+  font-size: 1.3rem;
 }
 
 .gallery-description {
@@ -100,6 +102,10 @@ body {
   color: white;
   font-size: 1.3rem;
   font-weight: 500;
+}
+
+.fa-solid {
+  scale: 0.8;
 }
 
 .galleryBtn {
@@ -146,14 +152,15 @@ body {
     text-decoration: none;
     color: white;
     font-size: 1.3rem;
-    padding: 10px 40px;
+    padding: 10px 25px;
     border: 1px solid pink;
-    border-radius: 2px;
+    border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.2);
   }
 
   .primary-header {
     margin: 0 0;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .primary-navigation {
